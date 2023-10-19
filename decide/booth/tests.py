@@ -21,4 +21,9 @@ class BoothTestCase(BaseTestCase):
         response = self.client.get('/booth/10000')
         self.assertEqual(response.status_code, 301)
 
-       
+class SimpleTest(TestCase):
+    def test_basic_addition(self):
+        """
+        Tests that 1 + 1 always equals 2.
+        """
+        self.assertEqual(1 + 1, 2)
